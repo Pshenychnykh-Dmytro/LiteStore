@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LiteStore.Web.IoC;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,6 +14,7 @@ namespace LiteStore.Web
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            AutofacResolver.ConfigureContainer();
         }
     }
 }
